@@ -12,7 +12,6 @@
     "@mantine/carousel": "^7.7.0",
     "@mantine/core": "^7.7.0",
     "@mantine/hooks": "^7.7.0",
-    "@next/swc-win32-ia32-msvc": "^14.2.16",
     "axios": "^1.6.8",
     "embla-carousel-autoplay": "^7.1.0",
     "embla-carousel-react": "^7.1.0",
