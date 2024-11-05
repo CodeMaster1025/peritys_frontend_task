@@ -89,5 +89,26 @@ NEXTAUTH_URL=http://localhost:3000
   <li>User dashboard for tracking orders and managing account settings.</li>
 </ul>
 
-<h2 id="license">License</h2>
-<p>This project is licensed under the MIT License.</p>
+
+## Contributing
+
+Contributions are welcome! Please follow the steps below to contribute:
+
+1. **Fork the repository**
+2. **Create a new branch**
+   ```bash
+   git checkout -b feature-branch
+3. **Make your changes**
+4. **Commit your changes**
+   ```bash
+   git commit -m 'Add new feature'
+5. **Push to the branch**
+   ```bash
+   git push origin feature-branch
+6. **Open a Pull Request**
+   ```bash
+   This code can be directly used in your `README.md` file under the "Usage" and "Contributing" sections.
+
+## Support Me
+[![Buy me a coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=☕&slug=khushisrivastava&button_colour=BD5FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00)](https://www.buymeacoffee.com/khushisrivastava)
+
