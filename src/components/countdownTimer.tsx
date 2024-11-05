@@ -3,37 +3,31 @@
 import { useEffect, useState } from "react";
 
 export default function CountDownTimer() {
-  const difference = +new Date("2024-03-29 20:00:00") - +new Date();
   const calculateTimeLeft = () => {
+    const difference = +new Date("2024-03-29 20:00:00") - +new Date();
     let timeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 };
 
     if (difference > 0) {
       timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)) | 0,
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24) | 0,
-        minutes: Math.floor((difference / 1000 / 60) % 60) | 0,
-        seconds: Math.floor((difference / 1000) % 60) | 0,
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
       };
     }
 
     return timeLeft;
   };
 
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
-    return () => clearTimeout(timer);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  });
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className="flex flex-row gap-4 mr-4">

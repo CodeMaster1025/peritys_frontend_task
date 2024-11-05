@@ -137,7 +137,7 @@ export default function Home() {
         <div className="flex flex-row items-center justify-between w-full md:pr-28">
           <div className="flex flex-row items-center justify-between gap-4">
             <h1 className="text-[2rem] font-bold">FLASH SALES</h1>
-            {CountDownTimer()}
+            <CountDownTimer />
           </div>
         </div>
       </div>
